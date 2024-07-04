@@ -1,0 +1,30 @@
+﻿@model BancoKRT.Models.LimitePixModel
+
+<h1>Consulta de Limite PIX</h1>
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-info" role="alert">
+        @ViewBag.Message
+    </div>
+}
+
+<form asp-action="ConsultarLimite" method="post">
+    <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" id="cpf" name="cpf" required>
+    </div>
+    <div class="form-group">
+        <label for="agencia">Agência:</label>
+        <input type="text" class="form-control" id="agencia" name="agencia" required>
+    </div>
+    <div class="form-group">
+        <label for="conta">Conta:</label>
+        <input type="text" class="form-control" id="conta" name="conta" required>
+    </div>
+    <div class="form-group">
+        <label for="limitePix">Limite PIX:</label>
+        <input type="number" class="form-control" id="limitePix" name="limitePix" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Consultar</button>
+</form>

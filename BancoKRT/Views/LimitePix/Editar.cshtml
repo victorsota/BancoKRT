@@ -1,0 +1,37 @@
+﻿@model BancoKRT.Models.LimitePixModel
+
+<h1>Editar Limite de PIX para Cliente</h1>
+@if (Model is null)
+{
+    <p>Nenhum cliente encontrado</p>
+}
+else
+{
+    <form method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="mt-3">
+            <label class="form-label">CPF</label>
+            <input type="text" class="form-control" asp-for="Cpf" readonly />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">Conta</label>
+            <input type="text" class="form-control" asp-for="Conta" readonly />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">Agência</label>
+            <input type="text" class="form-control" asp-for="Agencia" readonly />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">Limite PIX</label>
+            <input type="text" class="form-control" asp-for="LimitePix" />
+        </div>
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+    </form>
+}

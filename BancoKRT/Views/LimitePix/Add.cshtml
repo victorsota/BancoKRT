@@ -1,0 +1,39 @@
+﻿@model BancoKRT.Models.LimitePixModel
+
+<h1>Adicionar Limite de Pix para Cliente</h1>
+
+<form method="post">
+    <div class="mt-3">
+        <label class="form-label">Cpf</label>
+        <input type="text" class="form-control" asp-for="Cpf" />
+        <span asp-validation-for="Cpf" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Conta</label>
+        <input type="text" class="form-control" asp-for="Conta" />
+        <span asp-validation-for="Conta" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Agencia</label>
+        <input type="text" class="form-control" asp-for="Agencia" />
+        <span asp-validation-for="Agencia" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Limite</label>
+        <input type="text" class="form-control" asp-for="LimitePix" />
+        <span asp-validation-for="LimitePix" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

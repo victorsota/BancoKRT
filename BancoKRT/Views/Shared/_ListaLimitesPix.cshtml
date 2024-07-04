@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BancoKRT.Models.LimitePixModel>
+
+<div class="table-container">
+    @if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Conta</th>
+                    <th>Agência</th>
+                    <th>Limite Pix</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Cpf</td>
+                        <td>@item.Conta</td>
+                        <td>@item.Agencia</td>
+                        <td>@item.LimitePix</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Nenhum registro encontrado.</p>
+    }
+</div>

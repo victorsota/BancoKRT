@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gestão de limites</h1>
+    <p>Verifique a gestão de limites do cliente</p>
+    <!-- Adicionando links para Buscar, Adicionar e Consultar -->
+    <div>
+        <a class="btn btn-primary" href="@Url.Action("Buscar", "LimitePix")">Buscar Limite</a>
+        <a class="btn btn-secondary" href="@Url.Action("Add", "LimitePix")">Adicionar Limite</a>
+        <a class="btn btn-success" href="@Url.Action("ConsultarLimite", "LimitePix")">Consultar Limite</a>
+    </div>
+</div>
