@@ -1,0 +1,6 @@
+@BancoKRT.API_HostAddress = http://localhost:5089
+
+GET {{BancoKRT.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
