@@ -1,7 +1,7 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BancoKRT.Models
+namespace BancoKRT.Domain.Entities
 {
     [DynamoDBTable("ContaLimitePix")]
     public class LimitePixModel

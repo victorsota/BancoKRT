@@ -1,4 +1,4 @@
-namespace BancoKRT.Models
+namespace BancoKRT.Domain.Entities
 {
     public class ErrorViewModel
     {

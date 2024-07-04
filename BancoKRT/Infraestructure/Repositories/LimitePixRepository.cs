@@ -1,10 +1,10 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
-using BancoKRT.Models;
+using BancoKRT.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BancoKRT.Repositories
+namespace BancoKRT.Infraestructure.Repositories
 {
     public class LimitePixRepository : ILimitePixRepository
     {

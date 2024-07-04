@@ -1,8 +1,8 @@
-﻿using BancoKRT.Models;
+﻿using BancoKRT.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BancoKRT.Repositories
+namespace BancoKRT.Infraestructure.Repositories
 {
     public interface ILimitePixRepository
     {

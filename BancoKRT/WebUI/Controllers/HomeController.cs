@@ -1,8 +1,8 @@
-﻿using BancoKRT.Models;
+﻿using BancoKRT.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BancoKRT.Controllers
+namespace BancoKRT.WebUI.Controllers
 {
     public class HomeController : Controller
     {

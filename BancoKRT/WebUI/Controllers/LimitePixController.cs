@@ -1,11 +1,11 @@
-using BancoKRT.Models;
-using BancoKRT.Repositories;
+using BancoKRT.Domain.Entities;
+using BancoKRT.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BancoKRT.Controllers
+namespace BancoKRT.WebUI.Controllers
 {
     public class LimitePixController : Controller
     {

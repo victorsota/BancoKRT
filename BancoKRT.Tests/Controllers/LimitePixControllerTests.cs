@@ -1,6 +1,6 @@
-﻿using BancoKRT.Controllers;
-using BancoKRT.Models;
-using BancoKRT.Repositories;
+﻿using BancoKRT.Infraestructure.Repositories;
+using BancoKRT.Domain.Entities;
+using BancoKRT.WebUI.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
