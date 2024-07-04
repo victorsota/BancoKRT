@@ -132,11 +132,11 @@ namespace BancoKRT.Controllers
 
             if (limitePix <= cliente.LimitePix)
             {
-                ViewData["Message"] = $"O LimitePix informado ({limitePix}) é menor ou igual ao limite já registrado ({cliente.LimitePix}).";
+                ViewData["Message"] = $"O LimitePix informado ({limitePix}) é menor ou igual ao limite já registrado ({cliente.LimitePix}). TRANSAÇÃO ACEITA";
             }
             else
             {
-                ViewData["Message"] = $"O LimitePix informado ({limitePix}) é maior que o limite já registrado ({cliente.LimitePix}).";
+                ViewData["Message"] = $"O LimitePix informado ({limitePix}) é maior que o limite já registrado ({cliente.LimitePix}). TRANSAÇÃO NEGADA";
             }
 
             return View("ConsultarLimite");
